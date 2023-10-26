@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap'); */
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+.active{
+  @apply text-orange-400 underline underline-offset-4
+}
+.pagination{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.pagination li {
+  margin: 0 5px;
+}
+.pagination a{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+}
+.pagination a:hover{
+  background-color: #ccc;
+}
+.pagination li.activerPagination{
+  background: #ffff00;
+  border-radius: 4px;
+  color: #fff;
+}
+.active-button{
+  color: #ffff00;
+}
+/* body {
+  background-color: hsl(0, 0%, 98%);
+} */
+
+
+.input-box-shadow{
+  filter: drop-shadow(-4px -4px 44px rgba(0, 0, 0, 0.08));
+}
+
+.slick-prev:before, 
+.slick-next:before {
+     color: black;
+     font-size: 40px;
+}
+
+.slick-next:before{
+  position: absolute;
+  right:0;
+   margin-top: -10px;
+   margin-right: 5px;
+}
+
+.slick-next,
+.slick-prev
+{
+  position: absolute;
+  right:0;
+ }
+
+.slick-prev{
+  z-index: 99999;
+  margin-left: 25px;
+}
+
+.category-card:hover .arrow-icon{
+  fill: white;
+}
+
+.slick-arrow{
+  position: absolute;
+  right:50;
+  margin-right: 25px;
+ }
+
+.slick-dots {
+  @apply ml-[-10px] hidden
+ }
